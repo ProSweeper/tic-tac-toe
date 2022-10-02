@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    font-size: 5vmin;
+    
+}
+
+h1 {
+    font-size: 4vmin;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 20vmin);
+    grid-template-rows: repeat(3, 20vmin);
+    margin: 8vmin 0;
+}
+
+#board > div {
+    border: 0.5vmin solid black;
+    text-align: center;
+    font-size: 15vmin;
+    
+}
+
+#board > div.left {
+    border-left: none;
+}
+#board > div.right {
+    border-right:none ;
+}
+#board > div.top {
+    border-top: none;
+}
+#board > div.bottom {
+    border-bottom: none;
+}
+
+button {
+    
+    padding: 2vmin;
+    border-radius: 4vmin;
+    border: 0.1vmin solid black;
+    font-size: 2vmin;
+}
+/* this is for accessing colors later */
+    /* color: transparent  
+    text-shadow: 0 0 0 #A7FFE4 --❌
+    color: transparent
+    text-shadow: 0 0 0 #FF74B1 --⭕ */
