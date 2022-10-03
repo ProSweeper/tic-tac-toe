@@ -68,6 +68,7 @@ function checkWinner() {
          return board[WINNING_COMBOS[i][0]]
       };
    };
+   if (!board.some((x)=> x === 0)) return 'T';
 }
 
 function render () {
