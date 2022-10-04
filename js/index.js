@@ -27,16 +27,6 @@ let winner; // will equal 1/-1/'T'/null depending on the checkWinner function
 const messageEl = document.querySelector('h1');
 const playAgainButton = document.querySelector('button');
 
-const topLeft = document.getElementById('0');
-const topMiddle = document.getElementById('1');
-const topRight = document.getElementById('2');
-const centerLeft = document.getElementById('3');
-const centerMiddle = document.getElementById('4');
-const centerRight = document.getElementById('5');
-const bottomLeft = document.getElementById('6');
-const bottomMiddle = document.getElementById('7');
-const bottomRight = document.getElementById('8');
- // use the rest operator to make an array of the objects
 /*----- event listeners -----*/
 playAgainButton.addEventListener('click', init);
 document.getElementById('board').addEventListener('click', handleClick);
